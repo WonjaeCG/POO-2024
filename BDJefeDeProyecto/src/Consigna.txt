@@ -1,0 +1,18 @@
+Un estudio de arquitectura desea crear una base de datos para gestionar sus proyectos. Nos dan las siguientes especificaciones: 
+Cada proyecto tiene un código y un nombre. Un proyecto tiene uno y solo un jefe de proyecto y un jefe de proyecto sólo puede estar involucrado en un proyecto o en ninguno.
+ 
+De cada jefe de proyecto se desean recoger sus datos personales (código, nombre, dirección y teléfono). Un jefe de proyecto se identifica por un código. No hay dos nombres de jefe de proyecto con el mismo nombre. 
+
+Un proyecto se compone de una serie de planos, pero éstos se quieren guardar de modo independiente al proyecto. Es decir, si en un momento dado se dejara de trabajar en un proyecto, se desea mantener la información de los planos asociados. 
+
+De los planos se desea guardar su número de identificación, la fecha de entrega, los arquitectos que trabajan en él y un !!!!!dibujo del plano general con información acerca del número de figuras que contiene!!!!!!. 
+
+Los planos tienen figuras. De cada figura se desea conocer, el identificador, el nombre, el color, el área y el perímetro. Además, de los !!!!polígonos se desea conocer el número de líneas que tienen, además de las líneas que lo forman!!!!!. El perímetro se desea que sea un método diferido; el área se desea implementarlo como genérico para cualquier tipo de figura, pero además se desea un método específico para el cálculo del perímetro de los polígonos. 
+
+De cada líneas que forma parte de un polígono se desea conocer el punto de origen y el de fin (según sus coordenadas, X e Y), así como la longitud. Cada línea tiene un identificador que permite diferenciarlo del resto. La longitud de la línea se puede calcular a partir de sus puntos origen y final.
+
+Clase1: Proyecto [un código y un nombre, Jefe de ptoyecto]
+Clase2: Planos [número de identificación, la fecha de entrega, los arquitectos que trabajan en él y un dibujo del plano general con información acerca del número de figuras que contiene]
+Clase3: Jefe [código, nombre, dirección y teléfono]
+Clase4: Figuras [el identificador, el nombre, el color, el área y el perímetro//número de líneas]
+
